@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Tienda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <section class="discount">
+            <p>20% de descuento en todos los productos!</p>
+        </section>
+        <section class="titleSection">
+            <img src="./images/Logo_tienda.png" alt="logo-tienda">
+            <h1>Nombre Tienda</h1>
+        </section>
+        <section class="nav-right">
+            <ul>
+                <li>Contacto</li>
+                <li>Registrarme</li>
+                <li>Ingresar</li>
+            </ul>
+        </section>
+    </header>
+    <main class="MainContent">
+        <form action="" class="form-container">
+            <section>
+                <h1 class="title-form">Añadí tu super!</h1>
+                <p class="sub-title">Agregá tu personaje favorito completando las opciones.</p>
+            </section>
+            <section>
+                <article class="column-1">
+                    <div class="col">
+                        <label for="name">*Nombre</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="col">
+                        <label for="especie" required>*Especie</label>
+                        <select name="especie">
+                            <option value="Especie">Especie</option>
+                            <option value="Unknown">Unknown</option>
+                        </select>
+                    </div>
+                </article>
+                <article class="column-2">
+                    <div class="col">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" name="fecha">
+                    </div>
+                    <div class="col">
+                        <label for="">Agregar Foto</label>
+                        <input type="file" name="file" id="file" disabled>
+                    </div>
+                </article>
+                <article class="column-4">
+                    <div>
+                        <textarea name="textarea" id="textarea" cols="32" rows="15" placeholder="Descripción"></textarea>
+                    </div>
+                    <div>
+                        <div class="poderes">
+                        <p class="title-txt">Poderes</p>
+                            <input type="checkbox" id="poderes" name="poderes" value="Volar">
+                            <label for="poderes">Volar</label><br>
+                            <input type="checkbox" id="poderes" name="poderes" value="Superinteligencia">
+                            <label for="poderes">Superinteligencia</label><br>
+                            <input type="checkbox" id="poderes" name="poderes" value="Vista-rayolaser">
+                            <label for="poderes">Vista de rayo láser</label><br>
+                            <input type="checkbox" id="poderes" name="poderes" value="Billetera-gorda">
+                            <label for="poderes">Billetera gorda</label><br>
+                        </div>
+                        <hr>
+                        <div class="personaje">
+                        <p class="title-txt">Tipo de personaje</p>
+                            <input type="radio" id="personaje" name="personaje" value="Heroe/Heroina">
+                            <label for="personaje">Héroe / Heroina</label><br>
+                            <input type="radio" id="personaje" name="personaje" value="Villano/Villana">
+                            <label for="personaje">Villano / Villana</label><br>
+                        </div>
+                    </div>
+                </article>
+            </section>
+                <button class="btn-añadir">Añadir</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <article>
+            <p>Todos los derechos reservados a FRONT END 1</p>
+        </article>
+    </footer>
+</body>
+</html>
